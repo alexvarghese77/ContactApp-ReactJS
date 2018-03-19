@@ -11,3 +11,14 @@
   line-height: 25px;
   border-radius: 4px;
 }
+ul {
+  list-style-type: none;
+}
+li{
+  padding:5px;
+  text-transform: uppercase; 
+  list-style-type:none;
+  list-style-position: inside;
+  border-bottom: solid 1px black;
+  margin-top: 20px;
+}
