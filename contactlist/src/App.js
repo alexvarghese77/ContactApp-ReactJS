@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Header} from './components/header.js'
+import {Header} from './components/Header.js'
+import ContactList from './components/ContactList'
 
 class App extends Component {
   render() {
     return (
-      <Header/>
+      <div>
+        <Header/>
+      <ContactList/>
+      </div>
+      
     );
   }
 }
