@@ -9,9 +9,9 @@ class App extends Component {
   render() {
     return (
       <div align="center">
+      <Header/>
       <Router>
         <Switch>
-        <Route path="/" exact  component={Header}></Route>
         <Route path="/" exact  component={ContactList}></Route>
         <Route path="/contactdetails/:id" exact strict  component={ContactDetails}></Route>
         </Switch>
