@@ -5,8 +5,8 @@ export const Header = (props) => {
     return (
         <div className="header">
             <h1>Contact</h1>
-            
+
         </div>
 
     )
-} 
+}
