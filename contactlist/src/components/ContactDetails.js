@@ -4,7 +4,7 @@ import {ContactDetail} from '../MockData/ContactListDetails.json';
 export default class ContactDetails extends React.Component{
    
     render(){
-        console.log(this.props.match.params.id);
+        console.log(this.props);
         return(
             <div>
                     <div className="header">

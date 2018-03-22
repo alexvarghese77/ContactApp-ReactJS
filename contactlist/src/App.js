@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div align="center">
-      <Header/>
+      
       <Router>
         <Switch>
         <Route path="/" exact  component={ContactList}></Route>
