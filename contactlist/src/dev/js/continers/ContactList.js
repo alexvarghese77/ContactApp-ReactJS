@@ -1,15 +1,18 @@
 import React from 'react';
-import {Header} from '../components/Header';
-
 import react,{Component} from 'react'
 import {connect} from 'react-redux'
+import {bindActionCreators} from 'redux'
+import {Link} from 'react-router-dom'
+
+import {ContactDetail} from '../actions/index'
+import {Header} from '../components/Header';
 
  class ContactList extends Component{
 
     renderList(){
     return this.props.contacts.map((user)=>
     {
-        return (<li key={user.id}>{user.name}</li>)
+        return (<Link to='/contactdetail' key={user.id}><li key={user.id} onClick={()=>this.props.ContactDetail(user)}>{user.name}</li></Link>)
     }
     )
     }
@@ -36,6 +39,10 @@ function mapStateToProps(state) {
     };
 }
 
+function matchDispatchToProps(dispatch){
+    return bindActionCreators({ContactDetail: ContactDetail}, dispatch);
+}
 
 
-export default connect(mapStateToProps)(ContactList);
+
+export default connect(mapStateToProps,matchDispatchToProps)(ContactList);
