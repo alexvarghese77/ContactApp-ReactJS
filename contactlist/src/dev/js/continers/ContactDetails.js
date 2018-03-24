@@ -24,4 +24,4 @@ function mapStateToProps(state) {
 }
 
 
-export default connect((mapStateToProps)(ContactDetails));
+export default connect (mapStateToProps)(ContactDetails);
