@@ -1,7 +1,7 @@
 import React from 'react'
 import ContactList from '../continers/ContactList'
 import ContactDetails from '../continers/ContactDetails'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 
 const AppMain=()=>{
     return(
