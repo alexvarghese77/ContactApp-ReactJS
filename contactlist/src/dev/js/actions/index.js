@@ -4,4 +4,11 @@ export const ContactDetail=(Contact)=>{
         payload: Contact 
     }
 }
+export const DeleteContact=(state,Contact)=>{
+    return {
+        type: 'USER_DELETE',
+        payload: Contact 
+    }
+}
+
 
