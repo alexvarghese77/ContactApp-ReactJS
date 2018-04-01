@@ -29,15 +29,18 @@ class ContactDetails extends React.Component{
              <h3>
                  Phone: { this.props.contactDetail.phone }
              </h3>
-             <button onClick={()=>this.props.DeleteContact(this.state,this.props.contactDetail)}>Delete</button>
+             <button onClick={()=>this.props.DeleteContact(this.props.contactDetail)}>Delete</button>
             </div>
         ) 
     }
 }
 
 function mapStateToProps(state) {
+
+    console.log("State",state)
     return {
-        contactDetail: state.contactDetail
+        contactDetail: state.contactDetail,
+        contacts: state.contacts
     };
 }
 

@@ -1,10 +1,10 @@
 import {combineReducers} from 'redux'
-import contacts from './reducer-contact'
-import contactDetail from './reducer-contact-details'
+import {contacts,contactDetails} from './reducer-contact'
+//import contactDetail from './reducer-contact-details'
 
 const allReducers=combineReducers({
     contacts:contacts,
-    contactDetail:contactDetail
+    contactDetail:contactDetails
     
 })
 
