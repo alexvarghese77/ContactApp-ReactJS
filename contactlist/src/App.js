@@ -5,11 +5,12 @@ import {createStore, applyMiddleware} from 'redux'
 import allReducers from './dev/js/reducers/index'
 import {Provider} from 'react-redux'
 import thunk from 'redux-thunk';
+import contacts from './dev/js/mockData/contacts.json'
 
 
 class App extends Component {
   render() {
-    const store=createStore(allReducers,applyMiddleware(thunk));
+    const store=createStore(allReducers,contacts);
     return (
       <Provider store={store}>
         <AppMain/>

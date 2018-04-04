@@ -5,31 +5,10 @@ export const ContactDetail=(Contact)=>{
     }
 }
 export const DeleteContact =(Contact)=>{
-    debugger;
-    return (dispatch, getState) => {
-        const { contacts } = getState();
-    
-        dispatch({
+    return {
           type: 'USER_DELETE',
           payload: Contact
-        });
-      };
-
-
-
-
-
-
-
-
-
-
-
-    debugger;
-    return {
-        type: 'USER_DELETE',
-        payload: Contact 
-    }
+      }
 }
 
 
