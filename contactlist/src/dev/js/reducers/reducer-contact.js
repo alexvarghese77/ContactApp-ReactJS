@@ -1,9 +1,7 @@
 export const contacts=(state=null,action)=>{
     switch(action.type){
-        case 'USER_SELECTED': 
-                               return action.payload;
         case  'USER_DELETE' :
-                               return action.payload;
+                               return state.filter((contacts)=>contacts.id!==action.payload);
                     default :  state;
     }
     return state

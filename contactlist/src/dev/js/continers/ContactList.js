@@ -10,11 +10,11 @@ import {Header} from '../components/Header';
  class ContactList extends Component{
 
     renderList(){
-        console.log(this.props)
+        console.log("//////////////////",this.props)
     return this.props.contacts.map((user)=>
     {
-    // return (<Link to='/contactdetail' key={user.id}><li key={user.id} onClick={()=>this.props.ContactDetail(user)}>{user.name}</li></Link>)
-    return (<li key={user.id} onClick={()=>this.props.ContactDetail(user)}>{user.name}</li>)
+     return (<Link to='/contactdetail' key={user.id}><li key={user.id} onClick={()=>this.props.ContactDetail(user)}>{user.name}</li></Link>)
+    //return (<li key={user.id} onClick={()=>this.props.ContactDetail(user)}>{user.name}</li>)
     }
     )
     }
@@ -38,7 +38,6 @@ function mapStateToProps(state) {
     console.log(state);
     return {
         contacts: state.contacts,
-        ContactDetail: state.ContactDetail
     };
 }
 

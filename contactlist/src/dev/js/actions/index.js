@@ -4,10 +4,10 @@ export const ContactDetail=(Contact)=>{
         payload: Contact 
     }
 }
-export const DeleteContact =(Contact)=>{
+export const DeleteContact =(id)=>{
     return {
           type: 'USER_DELETE',
-          payload: Contact
+          payload: id
       }
 }
 

@@ -1,7 +1,8 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import { Route, Redirect } from 'react-router'
+import { Route, Redirect} from 'react-router'
 import {bindActionCreators} from 'redux'
+import {Link} from "react-router-dom";
 
 
 import {DeleteContact} from '../actions/index'
@@ -29,7 +30,7 @@ class ContactDetails extends React.Component{
              <h3>
                  Phone: { this.props.contactDetail.phone }
              </h3>
-             <button onClick={()=>this.props.DeleteContact(this.props.contactDetail)}>Delete</button>
+            <Link to="/"> <button onClick={()=>this.props.DeleteContact(this.props.contactDetail.id)}>Delete</button></Link>
             </div>
         ) 
     }
@@ -39,7 +40,7 @@ function mapStateToProps(state) {
 
     console.log("State",state)
     return {
-        contactDetail: state.contactDetail,
+        contactDetail: state.ContactDetail,
         contacts: state.contacts
     };
 }
