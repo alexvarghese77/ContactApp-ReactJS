@@ -36,7 +36,7 @@ export default class AddContact extends Component{
         </Form>
               </Col>
           </Row>
-          </div>
+          </div >
         )
     }
 }
