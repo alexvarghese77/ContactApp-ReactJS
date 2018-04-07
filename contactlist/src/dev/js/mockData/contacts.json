@@ -1,27 +1,32 @@
 { 
     "contacts": [
         {
-            "name":"Alex",
+            "fname":"Alex",
+            "lname":"Varghese",
             "id":1,
             "phone":"123456789"
         },
         {
-            "name":"Albin",
+            "fname":"Albin",
+            "lname":"Varghese",
             "id":2,
             "phone":"123456789"
         },
         {
-            "name":"Ammu",
+            "fname":"Ammu",
+            "lname":"Kutty",
             "id":3,
             "phone":"123456789"
         },
         {
-            "name":"Prashanth",
+            "fname":"Prashanth",
+            "lname":"Ragav",
             "id":4,
             "phone":"123456789"
         },
         {
-            "name":"Ranjith",
+            "fname":"Ranjith",
+            "lname":"Ramchandran",
             "id":5,
             "phone":"123456789"
         }

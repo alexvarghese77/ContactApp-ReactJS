@@ -6,7 +6,8 @@ import allReducers from './dev/js/reducers/index'
 import {Provider} from 'react-redux'
 import thunk from 'redux-thunk';
 import contacts from './dev/js/mockData/contacts.json'
-
+import { Button } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
   render() {

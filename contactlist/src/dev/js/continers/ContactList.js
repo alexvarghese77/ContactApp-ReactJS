@@ -3,6 +3,7 @@ import react,{Component} from 'react'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import {Link} from 'react-router-dom'
+import { ListGroup, ListGroupItem } from 'reactstrap';
 
 import {ContactDetail} from '../actions/index'
 import {Header} from '../components/Header';
@@ -13,8 +14,8 @@ import {Header} from '../components/Header';
         console.log("//////////////////",this.props)
     return this.props.contacts.map((user)=>
     {
-     return (<Link to='/contactdetail' key={user.id}><li key={user.id} onClick={()=>this.props.ContactDetail(user)}>{user.name}</li></Link>)
-    //return (<li key={user.id} onClick={()=>this.props.ContactDetail(user)}>{user.name}</li>)
+     return (<Link to='/contactdetail' key={user.id}><ListGroupItem key={user.id} tag="a" onClick={()=>this.props.ContactDetail(user)}>{user.fname +" "+user.lname }</ListGroupItem></Link>)
+     //return (<Link to='/contactdetail' key={user.id}><ListGroupItem key={user.id} onClick={()=>this.props.ContactDetail(user)}>{user.name}</ListGroupItem></Link>)
     }
     )
     }
@@ -26,9 +27,11 @@ import {Header} from '../components/Header';
         return (
             <div>
             <Header/>
-            <ul>
+            <ListGroup>
                 {this.renderList()}
-            </ul>
+            </ListGroup>
+  
+
             </div>
         )
     }
