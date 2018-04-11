@@ -32,7 +32,7 @@
         }
  
     ],
-    "contactDetails":[
+    "ContactDetail":[
         {
             "name":"Ranjith",
             "id":5,
